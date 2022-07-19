@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="file.js"></script>
+	
+	<title>FixarService</title>
+</head>
+<body>
+	
+	<header>
+			<nav class="container">
+				<a href="#" class="logo"></a>
+				<div class="topNav">
+					<a href="index.html">Главная</a>
+					<a href="pages/service.html">Услуги</a>
+					<a href="pages/contacts.html">Контакты</a>
+				</div>
+				<div class="record_login">
+					<button onclick="show('block')" class="record"></button>
+					<div onclick="show('none')" id="gray"></div>
+					<div id="window">
+						<div class="record_form">
+								<div class="formLogo">
+									<h1>FIXAR SERVICE</h1>
+								</div>
+								<form class="formRequest" >
+									<div class="titleRequest">
+										<h2>Заявка</h2>
+										<img class="close" src="img/close.png" alt="" onclick="show('none')">
+									</div>
+									<input placeholder="Имя" type="text" name="firstName" id="text1" pattern=".{1,}" required>
+									
+									<input placeholder="Телефон" type="number" name="phone" id="text1" pattern=".{1,}" required>
+									<input placeholder="Ваше авто" type="text" name="car" id="text1" pattern=".{1,}" required>
+									<textarea name="text" placeholder="Опишите Вашу проблему" cols="80" rows="6" id="text1" pattern=".{1,}" required></textarea>
+									<select name="service" id="text1" pattern=".{1,}" required>
+										
+										<option value="1">Замена масла</option>
+										<option value="2">Ремонт двигателя</option>
+										<option value="3">Услуга3</option>
+										<option value="4">Услуга4</option>
+										<option value="5">Услуга5</option>
+										<option value="6">Услуга6</option>
+									</select>
+									
+									<input type="date" placeholder="Дата записи" name="recordingDate" >
+									<input type="submit" value="Отправить" id="buttonSend" onclick="JavaScript:return Validator(this.id);">
+									
+									
+								</form>
+								
+								
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="registration">
+					<button onclick="showLog('block')" class="login"></button>
+					<div onclick="showLog('none')" id="grayRegis"></div>
+					<div id="windows">
+						<div class="loginForm">
+							<form class="formRequest"  method="post" action="">
+								<div class="titleRequest">
+									<h2>Вход</h2>
+									<img class="close" src="img/close.png" alt="" onclick="showLog('none')">
+								</div>
+								<input placeholder="Логин" type="text" name="NameLogin" id="text1" pattern=".{1,}" required>
+								<input placeholder="Пароль" type="text" name="password"id="text1" pattern=".{1,}" required>
+								<span>
+									<input type="checkbox" name="rememberPas" value="val" > 
+									<label>
+										Запомнить пароль
+									</label>
+								</span>
+								<input  type="submit" value="Войти" id="Enter"  onclick="JavaScript:return Validator(this.id);">
+
+								<div class="ForgotPas">
+								<ul id ="Forgot">
+							        <li>
+							            <a href="">
+							            Забыли пароль?</a>
+							        </li>
+							    </ul>
+								</div>
+								<div class="сopyright">
+									<label>
+										FIXAR SERVICE 2022
+									</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				
+					
+			</nav>
+	</header>
+	
+	<div id="scrollToTop" onclick="goUp();"><img src="img/up.png" alt="" width="50" height="50"> </div>
+	
+	
+	<div class="carBackground">
+		
+		<div class="TransformLogo">
+			<span id="LogoFirm">
+				Fixar Service
+			</span>
+		</div>
+		<div class="container">
+			
+			<div class="slider">
+				<div class="slides">
+					<input type="radio" name="r" id="r1" checked>
+					<input type="radio" name="r" id="r2">
+					<input type="radio" name="r" id="r3">
+					<input type="radio" name="r" id="r4">
+	
+					<div class="slide s1"><img src="img/img_for_slider_1.jpg" alt=""></div>
+					<div class="slide"><img src="img/img_for_slider_2.jpg" alt=""></div>
+					<div class="slide"><img src="img/img_for_slider_3.jpg" alt=""></div>
+					<div class="slide"><img src="img/img_for_slider_4.jpg" alt=""></div>
+	
+				</div>
+
+					<div class="navigation">
+
+						<label for="r1" class="bar"></label>
+						<label for="r2" class="bar"></label>
+						<label for="r3" class="bar"></label>
+						<label for="r4" class="bar"></label>
+
+					</div>
+	
+			</div>
+			<div class="block_info">
+				<button onclick="showHelpMain('block')" class="ImgInfo">
+					<img src="img/Info.png" alt="" width="70" height="70">
+				</button>
+				<div onclick="showHelpMain('none')" id="grayBackMain"></div>
+				<div id="windMain">
+					<div class="placeSlider">
+						<iframe width="1000" height="500" src="Video/MainPageTutorial.mp4" frameborder="0 ">
+
+						</iframe>
+						
+					</div>
+				
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<div class="placeWork">
+		<div class="place container">
+			
+			<div class="titleWork">
+				<div class="border"></div>
+				<div class="textWork">
+					Сервис FIXAR SERVICE - надежный "друг" твоей машины
+				</div>
+
+			</div>
+			<div class="servicingIMG">
+				<img src="img/car-servicing.jpg" alt="">
+				<div class="textServicing">
+					<span>
+						Служба СТО <br>
+					</span>
+					<span id="Fixar">"Fixar Service"</span>
+					<br>
+					<br>
+					<br>
+					<span id="info">Найдет решение нестандартных задач связанных с диагностикой, 
+						техническим обслуживанием и ремонтом Вашего автомобиля. А также опытные менеджеры СТО «FixarService» подберут и закажут Вам нужные автозапчасти.</span>
+						
+						
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<div class="lastInfoBlock">
+		<div class="container">
+			<div class="titleLastWork">
+				<div class="title">
+					<div class="border"></div>
+					<div class="LastWork">
+						Последние выполненные работы
+					</div>
+				</div>
+			<div class="LastInfo">
+				<div class="IMGInfo">
+					<img src="img/done_job.png" alt="" width="700" height="700">
+				<div class="blockInfo">
+					Станция технического обслуживания (СТО) — предприятие, предоставляющее услуги населению и/или организациям по плановому техническому обслуживанию, текущему и капитальному ремонтам, устранению поломок, установке дополнительного оборудования (тюнингу),
+					 восстановительному (кузовному) ремонту автомобилей.
+
+					СТО представляет собой комплекс сооружений и механизмов 
+					(подъёмники, рихтовочные стенды, шиномонтажный станок, балансировка, стенд развала-схождения, установка для замены масла, промывки топливной системы, рихтовочное 
+					и покрасочно-сушильное оборудование, стенды и проверочники для диагностики электроцепей автомобиля), а также ручной 
+					и пневматический инструмент, собранные в одном месте для комплексного ремонта и обслуживания автомобилей.
+					
+				</div>
+			</div>
+			</div>
+	
+		
+			<div class="LastInfo">
+				<div class="blockInfo2">
+					Станция технического обслуживания (СТО) — предприятие, предоставляющее услуги населению и/или организациям по плановому техническому обслуживанию, текущему и капитальному ремонтам, устранению поломок, установке дополнительного оборудования (тюнингу),
+					 восстановительному (кузовному) ремонту автомобилей.
+
+					СТО представляет собой комплекс сооружений и механизмов 
+					(подъёмники, рихтовочные стенды, шиномонтажный станок, балансировка, стенд развала-схождения, установка для замены масла, промывки топливной системы, рихтовочное 
+					и покрасочно-сушильное оборудование, стенды и проверочники для диагностики электроцепей автомобиля), а также ручной 
+					и пневматический инструмент, собранные в одном месте для комплексного ремонта и обслуживания автомобилей.
+					
+				</div>
+				<div class="IMGInfo">
+					<img class="IMG2" src="img/done_job.png" alt="" width="800" height="600">
+				
+			</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="advantageBG">
+		
+		<div class="advantage container">
+			<div class="titleAdvantage">
+				<div class="border"></div>
+				<div class="textAdvantage">Наши преимущества</div>
+			</div>
+			<div class="advantageEnum">
+				<div class="advantage1">
+					Сертифицированые работники с професиональным образованием, они все о автомобилях Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quia adipisci, repellendus minima rerum laboriosam quo nemo sit nulla incidunt?
+					
+				</div>
+				<div class="advantage2">
+					Сертифицированые работники с професиональным образованием, они все о автомобилях Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quia adipisci, repellendus minima rerum laboriosam quo nemo sit nulla incidunt?
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+	<footer>
+		<div class="bottom container">
+			<div class="titleService">
+				<div class="nameService">FIXAR SERVICE</div>
+				<div class="imageService">
+					<img src="img/SportCar.png" alt="" width="500" height="300">
+				</div>
+				</div>
+				
+				
+				<div class="navBarBottom">
+					<ul class="contacts">
+						<li>Контакты</li>
+						<li><i class="fa-solid fa-phone colorPhone"></i><span>мобильный номер</span></li>
+						<li><i class="fa-solid fa-phone colorPhone"></i><span>второй мобильный номер</span></li>
+						<li><i class="fa-solid fa-phone colorPhone"></i><span>офисный номер</span></li>
+					</ul>
+						<ul class="navSite">
+							<li>Навигация сайта</li>
+							<li><a href="index.html">Главная страница сайта</a></li>
+							<li><a href="pages/contacts.html">О компании</a></li>
+							<li><a href="pages/service.html">Услуги</a></li>
+						</ul>
+						<ul class="socialMedia">
+							<li>Соц. сети</li>
+							<li><a href="#"><i class="fa-brands fa-youtube colorSocialMedia"></i><span>YouTube</span></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram colorSocialMedia"></i><span>Instagram</span></a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook colorSocialMedia"></i><span>Facebook</span></a></li>
+						</ul>
+				</div>
+		</div>
+	</footer>
+</body>
+</html>

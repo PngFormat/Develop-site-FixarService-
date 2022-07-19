@@ -1,0 +1,1432 @@
+body {
+  margin: 0 auto;
+  font-family: 'Maven Pro', sans-serif;
+  -webkit-overflow-scrolling: touch;
+ 
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+  
+}
+
+
+  header {
+
+  top: 0;  
+  z-index: 100;  
+  width: 100%;  
+  background-color: #171523;
+  height: 180px;
+  padding: 20px 10px;
+    
+
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+   
+    background-size: cover;
+    background-size:100%;
+    background-position: center center;
+    background-attachment: relative;
+    -webkit-background-size:cover;
+    -ms-background-size:cover;
+   
+  }
+
+  header nav {
+ 
+
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+ 
+  overflow: hidden;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+
+     
+
+ 
+
+  
+}
+
+  header nav .logo {
+    display: flex;
+    background: url(img/Logo_Fixar.png) no-repeat;
+    width: 150px;
+    height: 130px;
+
+    float: left;
+    color: black;
+    align-items: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+   
+
+  }
+ 
+
+
+  header nav .topNav {
+    margin-left: 150px;
+    float: right;
+
+
+  }
+
+
+
+  header nav .topNav a {
+    float: left;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 25px;
+  border-radius: 4px;
+  
+  }
+  header nav .record_login {
+    width: 100px;
+    height: 80px;
+    margin-left: 142px;
+  }
+  
+
+  @media screen and (max-width: 1415px) {
+    header nav .topNav a {
+      font-size: 40px;
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    header nav .topNav {
+      float: none;
+      margin-left: 0px;
+    }
+    header nav .record_login {
+     
+      margin-left: 0px;
+    }
+   
+  }
+  @media screen and (max-width: 700px){
+    header {
+      height: 250px;
+    }
+  }
+  @media screen and (max-width: 375px){
+    header {
+      height: 500px;
+    }
+  }
+  
+  
+
+
+
+header nav .topNav a:not(:last-child) {
+  margin-right: 45px;
+}
+
+
+
+
+header nav .record_login #gray {
+  opacity: 0.8;
+  padding: 15px;
+  background-color: rgba(1, 1, 1, 0.75);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 100;
+  overflow: auto;
+}
+
+header nav .record_login #window {
+  width: 630px;
+  height: 440px;
+  margin: 40px auto;
+  z-index: 150;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+header nav .record_login #window .record_form {
+  width: 620px;
+  height: 437px;
+  background-color: #1d1b26;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .record_login #window .record_form .formLogo {
+  width: 205px;
+  height: inherit;
+  background-color: #913137;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .record_login #window .record_form .formLogo h1 {
+  text-align: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+  height: inherit;
+  color: #fefefe;
+  font-size: 40px;
+}
+
+header nav .record_login #window .record_form .formRequest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 415px;
+  height: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .record_login #window .record_form .formRequest input:last-child {
+  border: none;
+  width: 167px;
+  height: 40px;
+  background-color: #942c46;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+header nav .record_login #window .record_form .formRequest input::-webkit-input-placeholder, header nav .record_login #window .record_form .formRequest textarea::-webkit-input-placeholder {
+  color: #fefefe;
+}
+
+header nav .record_login #window .record_form .formRequest input:-ms-input-placeholder, header nav .record_login #window .record_form .formRequest textarea:-ms-input-placeholder {
+  color: #fefefe;
+}
+
+header nav .record_login #window .record_form .formRequest input::-ms-input-placeholder, header nav .record_login #window .record_form .formRequest textarea::-ms-input-placeholder {
+  color: #fefefe;
+}
+
+header nav .record_login #window .record_form .formRequest input::placeholder, header nav .record_login #window .record_form .formRequest textarea::placeholder {
+  color: #fefefe;
+}
+
+header nav .record_login #window .record_form .formRequest .titleRequest {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .record_login #window .record_form .formRequest .titleRequest .close {
+  height: 20px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+header nav .record_login #window .record_form .formRequest .titleRequest h2 {
+  color: #fefefe;
+  margin-left: 150px;
+}
+
+header nav .record_login #window .record_form .formRequest input, header nav .record_login #window .record_form .formRequest select {
+  border: 0px;
+  border-bottom: solid 2px #fefefe;
+  
+}
+
+
+header nav .record_login #window .record_form .formRequest textarea {
+  border: 2px solid #fefefe;
+}
+
+header nav .record_login #window .record_form .formRequest input, header nav .record_login #window .record_form .formRequest textarea, header nav .record_login #window .record_form .formRequest select {
+  width: 260px;
+  background-color: #1d1b26;
+  color: #fefefe;
+  outline: none;
+}
+
+header nav .record_login #window .record_form .formRequest input, header nav .record_login #window .record_form .formRequest textarea, header nav .record_login #window .record_form .formRequest select {
+  margin-bottom: 20px;
+}
+
+header nav .record_login .record {
+  background: url(img/record.png);
+  width: 70px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+header nav .registration .login {
+  background: url(img/login.png);
+  width: 70px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+
+
+.carBackground .container .block_info .ImgInfo {
+
+  max-width: 100%;
+  height: auto;
+  align-items: right;
+  background: url(img/Info.png);
+  border-style: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carBackground .container .block_info #grayBackMain {
+  opacity: 0.8;
+  padding: 15px;
+  background-color: rgba(1, 1, 1, 0.75);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 100;
+  overflow: auto;
+}
+
+.carBackground .container .block_info #windMain {
+  width: 630px;
+  height: 440px;
+  margin-top: 200px;
+  margin-left: 550px;
+  z-index: 150;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+
+.carBackground .container .block_info .placeSlider {
+  width: 800px;
+  height: 1000px;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+
+
+/* Форма регистрации */
+
+header nav .registration {
+  width: 180px;
+  height: 80px;
+  margin-left: 20px;
+}
+
+header nav .registration #grayRegis {
+  display: none;
+  opacity: 0.8;
+  padding: 15px;
+  background-color: rgba(1, 1, 1, 0.75);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 100;
+  overflow: auto;
+}
+
+header nav .registration #windows {
+  width: 630px;
+  height: 440px;
+  margin: 40px auto;
+  z-index: 150;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+header nav .registration #windows .loginForm {
+  margin-left: 150px;
+  width: 360px;
+  height: 437px;
+  background-color: #1d1b26;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .registration #windows .loginForm .formLogo {
+  width: 205px;
+  height: inherit;
+  background-color: #913137;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .registration #windows .loginForm .formLogo h1 {
+  text-align: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+  height: inherit;
+  color: #fefefe;
+  font-size: 40px;
+}
+
+header nav .registration #windows .loginForm .formRequest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 370px;
+  height: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .registration #windows .loginForm .formRequest input:last-child {
+  border: none;
+  width: 167px;
+  height: 40px;
+  background-color: #942c46;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+header nav .registration #windows .loginForm .formRequest input::placeholder, header nav .registration #windows .loginForm .formRequest textarea::placeholder {
+  color: #fefefe;
+  font-size: 17px;
+}
+
+header nav .registration #windows .loginForm .formRequest .titleRequest {
+  margin-left: 25px;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .registration #windows .loginForm .formRequest .titleRequest .close {
+  height: 20px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+header nav .registration #windows .loginForm .formRequest .titleRequest h2 {
+  color: #fefefe;
+  margin-left: 130px;
+  height: 50px;
+  font-size: 30px;
+}
+
+
+header nav .registration #windows .loginForm .formRequest input, header nav .registration #windows .loginForm .formRequest select {
+  border: 0px;
+  border-bottom: solid 2px #fefefe;
+}
+
+header nav .registration #windows .loginForm .formRequest textarea {
+  border: 2px solid #fefefe;
+}
+
+header nav .registration #windows .loginForm .formRequest input, header nav .registration #windows .loginForm .formRequest textarea, header nav .registration #windows .loginForm .formRequest select {
+  width: 260px;
+  background-color: #1d1b26;
+  color: #fefefe;
+  outline: none;
+}
+
+header nav .registration #windows .loginForm .formRequest input, header nav .record_login #window .loginForm .formRequest textarea, header nav .registration #windows .loginForm .formRequest select {
+  margin-bottom: 20px;
+}
+
+header nav .registration #windows .loginForm .formRequest span {
+  margin-right: 95px;
+  width: 180px;
+  display:flex;
+  text-align: center;
+    align-self: center;
+
+}
+header nav .registration #windows .loginForm .formRequest span input{
+  margin-right: 0px;
+  height: 20px;
+  width: 30px;
+ 
+
+}
+header nav .registration #windows .loginForm .formRequest span label{
+  
+  width: 130px;
+  padding-top: 5px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+
+}
+header nav .registration #windows .loginForm .formRequest #Enter{
+  border: none;
+  width: 180px;
+  height: 40px;
+  background-color: #942c46;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+#text1:invalid + #Enter {
+  pointer-events: none;
+  /* для IE < 11 -- display: none; */
+}
+
+#text1:invalid + #buttonSend {
+  pointer-events: none;
+  /* для IE < 11 -- display: none; */
+}
+header nav .registration #windows .loginForm .formRequest .ForgotPas{
+  font-size: 20px;
+  color: white;
+}
+header nav .registration #windows .loginForm .formRequest #Forgot{
+  margin-right:150px;
+  margin-top:10px;
+  text-color: white;
+}
+
+header nav .registration #windows .loginForm .formRequest #Forgot li a{
+  color: white;
+  list-style-type: none;
+  font-size: 17px;
+}
+header nav .registration #windows .loginForm .formRequest #Forgot li {
+  list-style-type: none;
+}
+header nav .registration #windows .loginForm .formRequest .сopyright  {
+  height: 20px;
+  margin-top: 25px;
+}
+header nav .registration #windows .loginForm .formRequest .сopyright label {
+  color: white;
+  font-size: 15px;
+}
+/* КОНЕЦ Формы регистрации */
+
+
+.carBackground {
+  min-height: 1000px;
+  background: url(img/contentCar.png) no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+  
+  
+}
+
+.carBackground .container {
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+}
+
+.carBackground .container .slider {
+
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
+  border: 5px solid #d5d5d5;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 50px;
+  left: 20px;
+  
+}
+
+.carBackground .container .slider .slides {
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carBackground .container .slider .slides input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.carBackground .container .slider .slides #r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+.carBackground .container .slider .slides #r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+.carBackground .container .slider .slides #r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+.carBackground .container .slider .slides #r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+.carBackground .container .slider .slides .slide {
+  width: 25%;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.carBackground .container .slider .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.carBackground .container .slider .navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carBackground .container .slider .navigation .bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #d5d5d5;
+  opacity: 0.5;
+  border-radius: 10px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.carBackground .container .slider .navigation .bar:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+
+
+
+.placeWork {
+  background-color: #171523;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+ 
+  
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+}
+.placeWork .place{
+height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  
+background-size: cover;
+background-size:100%;
+background-position: center center;
+background-attachment: relative;
+-webkit-background-size:cover;
+-ms-background-size:cover;
+          
+}
+.placeWork .container{
+ 
+  height: 400px;
+}
+
+.placeWork .container  .titleWork .border {
+  width: 140px;
+  height: 14px;
+  background-color: #e74865;
+}
+
+.placeWork .container .titleWork {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 120px;
+  margin-top: 25px;
+  margin-left: 59px;
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+}
+.placeWork .place .titleWork .textWork{
+ 
+  margin-top: 10px;
+  font-size:40px;
+  color: #d5d5d5;
+}
+
+.placeWork .place .servicingIMG{
+  
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  border: 20px solid #e74865;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 55px;
+  
+ 
+  
+}
+
+.placeWork .place .servicingIMG .textServicing #Fixar{
+  font-size: 45px;
+  color:#d5d5d5;
+  margin-left: 270px;
+}
+.placeWork .place .servicingIMG .textServicing span{
+  font-size: 45px;
+  color:#d5d5d5;
+  margin-left: 300px;
+}
+@media screen and (max-width:1400px) {
+  .placeWork {
+ 
+    height: 1200px;
+  }
+  .placeWork .place .servicingIMG{
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+    float: right;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    
+    
+  }
+  .placeWork .container .titleWork {
+    width: 600px;
+    height: 70%;
+  }
+  .placeWork .place .servicingIMG img{ 
+    width: 70%;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .placeWork .place .servicingIMG .textServicing span, .placeWork .place .servicingIMG .textServicing {
+    margin-left: 0px;
+
+  }
+  .placeWork .place .servicingIMG .textServicing #Fixar {
+    margin-left: 0px;
+
+  }
+  .placeWork .container  .titleWork .border {
+    width: 140px;
+    height: 14px;
+    background-color: #e74865;
+  }
+}
+@media screen and (max-width:665px) {
+  .placeWork{
+    height: 1400px;
+  }
+}
+@media screen and (max-width:670px) {
+  .placeWork .container .titleWork {
+    width: 356px;
+    margin-bottom: 60px;
+  }
+  
+}
+.placeWork .place .servicingIMG .textServicing #info{
+  margin-left: 30px;
+  font-size: 35px;
+}
+@media screen and (max-width:577px) {
+  .placeWork .place .servicingIMG .textServicing #info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+    background-size: cover;
+    background-size:100%;
+    background-position: center center;
+    background-attachment: relative;
+    -webkit-background-size:cover;
+    -ms-background-size:cover;
+    margin-left: 0px;
+    font-size: 35px;
+    width: 200px;
+    height: 500px;
+  }
+  .placeWork .place .servicingIMG .textServicing{
+    
+    height: 1050px;
+  }
+  .placeWork {
+ 
+    height: 2000px;
+  }
+}
+
+
+.placeWork .place .servicingIMG .textServicing {
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+  margin-left: 30px;
+}
+
+
+.lastInfoBlock{
+  display: flex;
+  overflow: hidden;
+ 
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+  height: 2200px;
+  background-color: #2d2a3b;
+}
+@media screen and (max-width:1547px){
+
+  .lastInfoBlock .container .titleLastWork .LastInfo, .lastInfoBlock .container .titleLastWork .LastInfo .IMGInfo
+   {
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .lastInfoBlock .container .titleLastWork .LastInfo .IMGInfo img{
+    width: 80%;
+    height: 50%;
+  }
+  .lastInfoBlock .container .titleLastWork .LastInfo .IMGInfo .IMG2{
+    width: 100%;
+    height: 100%;
+  }
+  .lastInfoBlock{
+    height: 3300px;
+  }
+  .lastInfoBlock .container .titleLastWork .LastInfo .blockInfo2{
+    display: flex;
+    
+    
+    
+    background-size: cover;
+    background-size:100%;
+    background-position: center center;
+    background-attachment: relative;
+    -webkit-background-size:cover;
+    -ms-background-size:cover;
+    font-size: 35px;
+    margin-top: 800px;
+    color:#d5d5d5;
+    
+  
+    margin-left: 60px;
+  
+   
+  }
+  
+  
+  
+  
+}
+@media screen and (max-width:859px){
+  .lastInfoBlock{
+    height: 4500px;
+  }
+  .lastInfoBlock .container .titleLastWork .LastInfo .blockInfo2 , .lastInfoBlock .container .titleLastWork .LastInfo .IMGInfo .blockInfo{
+    width: 500px;
+  }
+  .lastInfoBlock .container .titleLastWork .LastInfo .blockInfo2{
+    margin-top: 1300px;
+  }
+}
+
+@media screen and (max-width:552px){
+  .lastInfoBlock{
+    height: 6900px;
+  }
+  .lastInfoBlock .container .titleLastWork .LastInfo .blockInfo2 , .lastInfoBlock .container .titleLastWork .LastInfo .IMGInfo .blockInfo{
+    width: 200px;
+  }
+  .lastInfoBlock .container .titleLastWork .LastInfo .blockInfo2{
+    margin-top: 3000px;
+  }
+}
+.LastInfo{
+  
+  height: 1700px;
+  display: flex;
+}
+.lastInfoBlock .container .titleLastWork .LastInfo{
+  height: 900px;
+
+}
+.lastInfoBlock .container .titleLastWork .LastInfo .IMGInfo{
+  margin-left: 60px;
+  margin-top: 60px;
+  display: flex;
+ 
+}
+.lastInfoBlock .container .titleLastWork .LastInfo .blockInfo,.lastInfoBlock .container .titleLastWork .LastInfo .blockInfo2{
+  font-size: 35px;
+  color:#d5d5d5;
+  
+
+  
+  
+ 
+ 
+}
+
+.lastInfoBlock .container  .titleLastWork .title .border {
+  margin-top: 25px;
+  width: 140px;
+  height: 14px;
+  background-color: #e74865;
+}
+.lastInfoBlock .container  .titleLastWork .title .LastWork{
+ 
+  margin-top: 10px;
+  font-size:40px;
+  color: #d5d5d5;
+}
+.lastInfoBlock .container  .titleLastWork{
+  
+  height: 2100px;
+}
+
+.lastInfoBlock .container  .titleLastWork .title  {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 120px;
+ 
+  margin-left: 59px;
+}
+
+
+
+
+
+.advantageBG {
+  display: flex;
+  overflow: hidden;
+ 
+  width: 100%;
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+  height: 680px;
+  background-color: #d5d5d5;
+}
+
+.advantageBG .advantage {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  
+}
+
+.advantageBG .advantage .titleAdvantage {
+  height: 120px;
+  margin-top: 25px;
+  margin-left: 59px;
+}
+
+.advantageBG .advantage .titleAdvantage .border {
+  width: 140px;
+  height: 14px;
+  background-color: #e74865;
+}
+
+.advantageBG .advantage .titleAdvantage .textAdvantage {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.advantageBG .advantage .advantageEnum {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+.advantageBG .advantage .advantageEnum .advantage1, .advantageBG .advantage .advantageEnum .advantage2 {
+  width: 710px;
+  height: 320px;
+  background: url(img/advantageIcon.png) no-repeat;
+  padding-left: 264px;
+  padding-top: 31px;
+  line-height: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (max-width:1535px) {
+  .advantageBG {
+    height: 1500px;
+    background-color: #d5d5d5;
+  }
+  .advantageBG .advantage .advantageEnum{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .advantageBG .advantage .advantageEnum .advantage1,  .advantageBG .advantage .advantageEnum .advantage2{
+
+    padding-left: 264px;
+    padding-top: 31px;
+    line-height: 35px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 200px;
+  }
+  .advantageBG .advantage .advantageEnum .advantage2{
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .advantageBG .advantage .advantageEnum{
+    margin-left: 50px;
+  }
+  
+ 
+
+}
+@media screen and (max-width:765px) {
+  .advantageBG .advantage .advantageEnum .advantage1,  .advantageBG .advantage .advantageEnum .advantage2{
+    padding-left: 0px;
+    padding-top: 350px;
+    line-height: 35px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width:661px){
+  .advantageBG{
+    height: 1800px;
+  }
+  .advantageBG .advantage .advantageEnum .advantage1,  .advantageBG .advantage .advantageEnum .advantage2{
+    width: 400px;
+
+  }
+  .advantageBG .advantage .advantageEnum .advantage2{
+    margin-top: 200px;
+  }
+
+
+}
+.advantageBG .advantage .advantageEnum .advantage2 {
+  margin-left: 0px;
+}
+
+
+
+footer {
+  background-color: #171523;
+  height: 500px;
+}
+
+footer .bottom {
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+ 
+  background-size: cover;
+  background-size:100%;
+  background-position: center center;
+  background-attachment: relative;
+  -webkit-background-size:cover;
+  -ms-background-size:cover;
+ 
+}
+@media screen and (max-width:1485px) {
+  footer .bottom .titleService .imageService img{
+    width: 80%;
+    height: 70%;
+    margin-left: 60px;
+   
+    
+  }
+  footer .bottom .titleService .nameService {
+    margin-left: 150px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #d5d5d5;
+  }
+  footer .bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  footer .bottom .navBarBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  footer {
+    height: 1000px;
+  }
+ 
+  footer .bottom .navBarBottom .contacts li:first-child {
+    font-size: 5px;
+    color: #d5d5d5;
+  }
+
+}
+@media screen and (max-width:619px) {
+  footer {
+    height: 1300px;
+  }
+}
+
+
+footer .bottom .titleService .nameService {
+  font-size: 35px;
+  font-weight: 700;
+  color: #d5d5d5;
+}
+
+footer .bottom .navBarBottom {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float:right;
+}
+
+footer .bottom .navBarBottom ul:not(:last-child) {
+  margin-right: 46px;
+}
+
+footer .bottom .navBarBottom ul {
+  list-style-type: none;
+}
+
+footer .bottom .navBarBottom .contacts li:first-child {
+  font-size: 40px;
+  color: #d5d5d5;
+}
+footer .bottom .navBarBottom .navSite  {
+  float: right;
+}
+
+
+  footer .bottom .navBarBottom .contacts .colorPhone {
+    font-size: 20px;
+    margin: 20px 10px 15px 0px;
+    color: #ca253b;
+    
+  }
+
+  footer .bottom .navBarBottom .navSite a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #d5d5d5;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  footer .bottom .navBarBottom .navSite   {
+    float: none;
+  }
+  footer .bottom .navBarBottom .contacts span {
+  font-size: 20px;
+  color: #d5d5d5;
+
+  }
+  footer .bottom .navBarBottom {
+    
+    float:none;
+  }
+
+
+footer .bottom .navBarBottom .navSite li:first-child {
+  font-size: 40px;
+  color: #d5d5d5;
+}
+
+footer .bottom .navBarBottom .navSite li:nth-child(2) {
+  margin-top: 15px;
+}
+
+footer .bottom .navBarBottom .navSite li:nth-child(3) {
+  margin-top: 32px;
+}
+
+footer .bottom .navBarBottom .navSite li:nth-child(4) {
+  margin-top: 32px;
+}
+
+footer .bottom .navBarBottom .socialMedia a {
+  text-decoration: none;
+  color: #d5d5d5;
+}
+
+footer .bottom .navBarBottom .socialMedia span {
+  font-size: 20px;
+}
+
+footer .bottom .navBarBottom .socialMedia li:first-child {
+  font-size: 40px;
+  color: #d5d5d5;
+}
+
+footer .bottom .navBarBottom .socialMedia .colorSocialMedia {
+  font-size: 20px;
+  margin: 20px 10px 15px 0px;
+  color: #ca253b;
+}
+
+
+p {
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+.carBackground .TransformLogo{
+  margin-top: 0px;
+
+}
+
+.carBackground .TransformLogo #LogoFirm {
+
+  text-align: center;
+  text-transform: uppercase;
+  font: 700 4em/1 "Oswald", sans-serif;
+  padding: .25em 0 .325em;
+  display: block;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
+  animation: bounce-top 2s infinite both;
+    padding-top: 50px;
+  height: 50px;
+  
+ 
+  }
+
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+
+#scrollToTop {
+  background: url(../img/up.png) ;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 50;
+  transition: all 0.5s ease-in;
+}
+
+
